@@ -6,24 +6,18 @@ public class Ch05Ex02_12 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 	
-		int[] numbers = new int[10];
-		int[] result = new int[20]; 
+		int[] score = new int[10];
 		
-		while (true) {
-			String input = sc.nextLine(); 
-			int num = Integer.parseInt(input);
-			if (num != 0) {
-				numbers[(int)(num/10f)] += 1;
-			}else {
-				break;
-			}
+		for(int i = 0 ; i <100 ; i++) {
+			int number = sc.nextInt();
+			if(number == 0) 
+				break;	
+			score[(number/10)-1] +=1;
 		}
-
-		for (int i = 0; i < numbers.length; i++) {
-			if(numbers[i]==0) {
-			}else {
-			System.out.printf("%d : %d%n",i,numbers[i]);
-			}
+		
+		for(int i = score.length-1 ; i >= 0 ; i--) {
+			if(score[i]!=0)
+				System.out.printf("%d : %d person%n",(i+1)*10, score[i]);
 		}
 	}
 }
