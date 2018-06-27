@@ -8,7 +8,7 @@ public class Ch05Ex02_01 {
 		
 		String[] s = sc.nextLine().split(" ");
 		
-		for(int i = 9 ; i >= 0 ; i--)
+		for(int i = s.length-1 ; i >= 0 ; i--)
 			System.out.print(s[i] + " ");
 	}
 }
