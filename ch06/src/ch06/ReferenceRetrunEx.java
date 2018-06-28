@@ -7,7 +7,7 @@ public static void main(String[] args) {
 	
 	Data d2 = copy(d);
 	System.out.println("d.x ="+d.x);
-	System.out.println("d2.x = " +d.x);
+	System.out.println("d2.x = " +d2.x);
 	
 }
 
