@@ -54,8 +54,8 @@ public class ClassTest {
  */
 
 /*
- * public
- * private
- * default
- * protected
+ * public     : 어떤 접근이든 가능하다.
+ * protected  : 상속받은 클래스나 같은 패키지에서의 접근이 가능하다.
+ * default	  : 기본값 (같은 패키지 내에서만 접근이 가능하다.)
+ * private    : 클래스 내부에서만 상속이 가능하다.
  */
